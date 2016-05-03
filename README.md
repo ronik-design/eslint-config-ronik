@@ -1,8 +1,9 @@
 # eslint-config-ronik [![Build Status](https://travis-ci.org/ronik-design/eslint-config-ronik.svg?branch=master)](https://travis-ci.org/ronik-design/eslint-config-ronik)
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html)
-  for the [Ronik Design](http://www.ronikdesign.com) code style. This script builds
-  on the [XO](https://github.com/sindresorhus/xo) shareable config with small changes and additions.
+  for the [Ronik Design](http://www.ronikdesign.com) code style. This script
+  builds on the [XO](https://github.com/sindresorhus/xo) shareable config with
+  small changes and additions.
 
 
 ## Install
