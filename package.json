@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-ronik",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint shareable config for Ronik Design.",
-  "license": "LicenseRef-LICENSE",
+  "license": "ISC",
   "main": "index.js",
   "engines": {
     "node": ">=4.0.0"
@@ -15,7 +15,6 @@
     "url": "git+https://github.com/ronik-design/eslint-config-ronik.git"
   },
   "author": "Michael Shick <m@shick.us>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ronik-design/eslint-config-ronik/issues"
   },
