@@ -3,8 +3,6 @@ import isPlainObj from 'is-plain-obj';
 import eslint from 'eslint';
 import tempWrite from 'temp-write';
 
-const fixture = `'use strict';\nconst x = true;\n\nif (x) {\n  console.log();\n}\n`;
-
 function runEslint(str, conf) {
   const linter = new eslint.CLIEngine({
     useEslintrc: false,
@@ -12,6 +10,10 @@ function runEslint(str, conf) {
   });
 
   return linter.executeOnText(str).results[0].messages;
+}
+
+function hasRule(errors, ruleId) {
+  return errors.some(x => x.ruleId === ruleId);
 }
 
 test('browser', t => {
@@ -31,3 +33,14 @@ test('node', t => {
   const errors = runEslint('class Foo {}\n', conf);
   t.is(errors[0].ruleId, 'no-unused-vars');
 });
+
+test('react', t => {
+  const conf = require('../react');
+
+  t.true(isPlainObj(conf));
+  t.true(isPlainObj(conf.rules));
+
+  const errors = runEslint('<App>\n\t<Hello/>\n</App>', conf);
+  t.true(hasRule(errors, 'react/jsx-indent'));
+});
+
