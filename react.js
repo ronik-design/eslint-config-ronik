@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: 'xo/esnext',
+  extends: ['xo/esnext', 'xo-react'],
   plugins: ['filenames'],
   rules: {
     indent: [2, 2, {SwitchCase: 1}],

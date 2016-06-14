@@ -1,9 +1,10 @@
 'use strict';
 
 module.exports = {
-  extends: 'xo-space/esnext',
+  extends: 'xo/esnext',
   plugins: ['filenames'],
   rules: {
+    indent: [2, 2, {SwitchCase: 1}],
     'quote-props': 0,
     'dot-notation': 0,
     'guard-for-in': 0,
