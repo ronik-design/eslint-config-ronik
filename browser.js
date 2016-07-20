@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: ['xo/esnext', 'plugin:import/errors'],
-  plugins: ['filenames', 'import'],
+  plugins: ['filenames'],
   rules: {
     indent: [2, 2, {SwitchCase: 1}],
     'quote-props': 0,

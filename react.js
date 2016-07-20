@@ -1,8 +1,13 @@
 'use strict';
 
 module.exports = {
-  extends: ['xo/esnext', 'xo-react/space', 'plugin:import/errors'],
-  plugins: ['filenames', 'import'],
+  extends: [
+    'xo/esnext',
+    'xo-react/space',
+    'plugin:import/errors',
+    'plugin:import/react'
+  ],
+  plugins: ['filenames'],
   rules: {
     indent: [2, 2, {SwitchCase: 1}],
     'quote-props': 0,
