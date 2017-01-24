@@ -21,10 +21,8 @@
   "homepage": "https://github.com/ronik-design/eslint-config-ronik#readme",
   "devDependencies": {
     "ava": "^0.15.2",
-    "babel-eslint": "^6.1.2",
     "clear-require": "^1.0.1",
-    "eslint": "^3.1.1",
-    "eslint-plugin-babel": "^4.0.1",
+    "eslint": "^3.14.0",
     "eslint-plugin-filenames": "^1.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^6.9.0",
@@ -36,9 +34,7 @@
     "eslint-config-xo-react": "^0.10.0"
   },
   "peerDependencies": {
-    "babel-eslint": "^6.1.2",
     "eslint": "^3.1.1",
-    "eslint-plugin-babel": "^4.0.1",
     "eslint-plugin-filenames": "^1.1.0",
     "eslint-plugin-import": "^2.2.0"
   },

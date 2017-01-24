@@ -7,7 +7,7 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/react'
   ],
-  plugins: ['filenames', 'babel'],
+  plugins: ['filenames'],
   rules: {
     indent: [2, 2, {SwitchCase: 1}],
     'quote-props': 0,
